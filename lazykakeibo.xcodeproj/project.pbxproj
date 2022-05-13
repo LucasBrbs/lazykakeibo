@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCEA9FF7282E8F2F00342DCB /* lazykakeiboApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA9FF6282E8F2F00342DCB /* lazykakeiboApp.swift */; };
+		FCEA9FF9282E8F2F00342DCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA9FF8282E8F2F00342DCB /* ContentView.swift */; };
+		FCEA9FFB282E8F3000342DCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCEA9FFA282E8F3000342DCB /* Assets.xcassets */; };
+		FCEA9FFE282E8F3000342DCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCEA9FFD282E8F3000342DCB /* Preview Assets.xcassets */; };
+		FCEAA008282E8F3000342DCB /* lazykakeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA007282E8F3000342DCB /* lazykakeiboTests.swift */; };
+		FCEAA012282E8F3000342DCB /* lazykakeiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA011282E8F3000342DCB /* lazykakeiboUITests.swift */; };
+		FCEAA014282E8F3000342DCB /* lazykakeiboUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA013282E8F3000342DCB /* lazykakeiboUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCEAA004282E8F3000342DCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCEA9FEB282E8F2F00342DCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCEA9FF2282E8F2F00342DCB;
+			remoteInfo = lazykakeibo;
+		};
+		FCEAA00E282E8F3000342DCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCEA9FEB282E8F2F00342DCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCEA9FF2282E8F2F00342DCB;
+			remoteInfo = lazykakeibo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FCEA9FF3282E8F2F00342DCB /* lazykakeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lazykakeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCEA9FF6282E8F2F00342DCB /* lazykakeiboApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lazykakeiboApp.swift; sourceTree = "<group>"; };
+		FCEA9FF8282E8F2F00342DCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FCEA9FFA282E8F3000342DCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCEA9FFD282E8F3000342DCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FCEAA003282E8F3000342DCB /* lazykakeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lazykakeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCEAA007282E8F3000342DCB /* lazykakeiboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lazykakeiboTests.swift; sourceTree = "<group>"; };
+		FCEAA00D282E8F3000342DCB /* lazykakeiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lazykakeiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCEAA011282E8F3000342DCB /* lazykakeiboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lazykakeiboUITests.swift; sourceTree = "<group>"; };
+		FCEAA013282E8F3000342DCB /* lazykakeiboUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lazykakeiboUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCEA9FF0282E8F2F00342DCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCEAA000282E8F3000342DCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCEAA00A282E8F3000342DCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCEA9FEA282E8F2F00342DCB = {
+			isa = PBXGroup;
+			children = (
+				FCEA9FF5282E8F2F00342DCB /* lazykakeibo */,
+				FCEAA006282E8F3000342DCB /* lazykakeiboTests */,
+				FCEAA010282E8F3000342DCB /* lazykakeiboUITests */,
+				FCEA9FF4282E8F2F00342DCB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCEA9FF4282E8F2F00342DCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCEA9FF3282E8F2F00342DCB /* lazykakeibo.app */,
+				FCEAA003282E8F3000342DCB /* lazykakeiboTests.xctest */,
+				FCEAA00D282E8F3000342DCB /* lazykakeiboUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCEA9FF5282E8F2F00342DCB /* lazykakeibo */ = {
+			isa = PBXGroup;
+			children = (
+				FCEA9FF6282E8F2F00342DCB /* lazykakeiboApp.swift */,
+				FCEA9FF8282E8F2F00342DCB /* ContentView.swift */,
+				FCEA9FFA282E8F3000342DCB /* Assets.xcassets */,
+				FCEA9FFC282E8F3000342DCB /* Preview Content */,
+			);
+			path = lazykakeibo;
+			sourceTree = "<group>";
+		};
+		FCEA9FFC282E8F3000342DCB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FCEA9FFD282E8F3000342DCB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FCEAA006282E8F3000342DCB /* lazykakeiboTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCEAA007282E8F3000342DCB /* lazykakeiboTests.swift */,
+			);
+			path = lazykakeiboTests;
+			sourceTree = "<group>";
+		};
+		FCEAA010282E8F3000342DCB /* lazykakeiboUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FCEAA011282E8F3000342DCB /* lazykakeiboUITests.swift */,
+				FCEAA013282E8F3000342DCB /* lazykakeiboUITestsLaunchTests.swift */,
+			);
+			path = lazykakeiboUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCEA9FF2282E8F2F00342DCB /* lazykakeibo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCEAA017282E8F3000342DCB /* Build configuration list for PBXNativeTarget "lazykakeibo" */;
+			buildPhases = (
+				FCEA9FEF282E8F2F00342DCB /* Sources */,
+				FCEA9FF0282E8F2F00342DCB /* Frameworks */,
+				FCEA9FF1282E8F2F00342DCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lazykakeibo;
+			productName = lazykakeibo;
+			productReference = FCEA9FF3282E8F2F00342DCB /* lazykakeibo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCEAA002282E8F3000342DCB /* lazykakeiboTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCEAA01A282E8F3000342DCB /* Build configuration list for PBXNativeTarget "lazykakeiboTests" */;
+			buildPhases = (
+				FCEA9FFF282E8F3000342DCB /* Sources */,
+				FCEAA000282E8F3000342DCB /* Frameworks */,
+				FCEAA001282E8F3000342DCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCEAA005282E8F3000342DCB /* PBXTargetDependency */,
+			);
+			name = lazykakeiboTests;
+			productName = lazykakeiboTests;
+			productReference = FCEAA003282E8F3000342DCB /* lazykakeiboTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCEAA00C282E8F3000342DCB /* lazykakeiboUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCEAA01D282E8F3000342DCB /* Build configuration list for PBXNativeTarget "lazykakeiboUITests" */;
+			buildPhases = (
+				FCEAA009282E8F3000342DCB /* Sources */,
+				FCEAA00A282E8F3000342DCB /* Frameworks */,
+				FCEAA00B282E8F3000342DCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCEAA00F282E8F3000342DCB /* PBXTargetDependency */,
+			);
+			name = lazykakeiboUITests;
+			productName = lazykakeiboUITests;
+			productReference = FCEAA00D282E8F3000342DCB /* lazykakeiboUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCEA9FEB282E8F2F00342DCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					FCEA9FF2282E8F2F00342DCB = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					FCEAA002282E8F3000342DCB = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = FCEA9FF2282E8F2F00342DCB;
+					};
+					FCEAA00C282E8F3000342DCB = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = FCEA9FF2282E8F2F00342DCB;
+					};
+				};
+			};
+			buildConfigurationList = FCEA9FEE282E8F2F00342DCB /* Build configuration list for PBXProject "lazykakeibo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCEA9FEA282E8F2F00342DCB;
+			productRefGroup = FCEA9FF4282E8F2F00342DCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCEA9FF2282E8F2F00342DCB /* lazykakeibo */,
+				FCEAA002282E8F3000342DCB /* lazykakeiboTests */,
+				FCEAA00C282E8F3000342DCB /* lazykakeiboUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCEA9FF1282E8F2F00342DCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEA9FFE282E8F3000342DCB /* Preview Assets.xcassets in Resources */,
+				FCEA9FFB282E8F3000342DCB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCEAA001282E8F3000342DCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCEAA00B282E8F3000342DCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCEA9FEF282E8F2F00342DCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEA9FF9282E8F2F00342DCB /* ContentView.swift in Sources */,
+				FCEA9FF7282E8F2F00342DCB /* lazykakeiboApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCEA9FFF282E8F3000342DCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEAA008282E8F3000342DCB /* lazykakeiboTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCEAA009282E8F3000342DCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEAA012282E8F3000342DCB /* lazykakeiboUITests.swift in Sources */,
+				FCEAA014282E8F3000342DCB /* lazykakeiboUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCEAA005282E8F3000342DCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCEA9FF2282E8F2F00342DCB /* lazykakeibo */;
+			targetProxy = FCEAA004282E8F3000342DCB /* PBXContainerItemProxy */;
+		};
+		FCEAA00F282E8F3000342DCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCEA9FF2282E8F2F00342DCB /* lazykakeibo */;
+			targetProxy = FCEAA00E282E8F3000342DCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FCEAA015282E8F3000342DCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCEAA016282E8F3000342DCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCEAA018282E8F3000342DCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lazykakeibo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lazy.lazykakeibo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCEAA019282E8F3000342DCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lazykakeibo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lazy.lazykakeibo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FCEAA01B282E8F3000342DCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lazy.lazykakeiboTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lazykakeibo.app/lazykakeibo";
+			};
+			name = Debug;
+		};
+		FCEAA01C282E8F3000342DCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lazy.lazykakeiboTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lazykakeibo.app/lazykakeibo";
+			};
+			name = Release;
+		};
+		FCEAA01E282E8F3000342DCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lazy.lazykakeiboUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = lazykakeibo;
+			};
+			name = Debug;
+		};
+		FCEAA01F282E8F3000342DCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lazy.lazykakeiboUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = lazykakeibo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCEA9FEE282E8F2F00342DCB /* Build configuration list for PBXProject "lazykakeibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCEAA015282E8F3000342DCB /* Debug */,
+				FCEAA016282E8F3000342DCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCEAA017282E8F3000342DCB /* Build configuration list for PBXNativeTarget "lazykakeibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCEAA018282E8F3000342DCB /* Debug */,
+				FCEAA019282E8F3000342DCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCEAA01A282E8F3000342DCB /* Build configuration list for PBXNativeTarget "lazykakeiboTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCEAA01B282E8F3000342DCB /* Debug */,
+				FCEAA01C282E8F3000342DCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCEAA01D282E8F3000342DCB /* Build configuration list for PBXNativeTarget "lazykakeiboUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCEAA01E282E8F3000342DCB /* Debug */,
+				FCEAA01F282E8F3000342DCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCEA9FEB282E8F2F00342DCB /* Project object */;
+}
