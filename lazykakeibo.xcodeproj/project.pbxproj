@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FCEA9FF7282E8F2F00342DCB /* lazykakeiboApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA9FF6282E8F2F00342DCB /* lazykakeiboApp.swift */; };
-		FCEA9FF9282E8F2F00342DCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA9FF8282E8F2F00342DCB /* ContentView.swift */; };
+		FC4BD42428366479008FE978 /* VariableBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BD42328366479008FE978 /* VariableBillView.swift */; };
+		FC8FB7BA28367DDD0047130A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC8FB7B828367DDD0047130A /* Model.xcdatamodeld */; };
+		FC8FB7BC28367ED00047130A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8FB7BB28367ED00047130A /* Persistence.swift */; };
 		FCEA9FFB282E8F3000342DCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCEA9FFA282E8F3000342DCB /* Assets.xcassets */; };
 		FCEA9FFE282E8F3000342DCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCEA9FFD282E8F3000342DCB /* Preview Assets.xcassets */; };
 		FCEAA008282E8F3000342DCB /* lazykakeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA007282E8F3000342DCB /* lazykakeiboTests.swift */; };
 		FCEAA012282E8F3000342DCB /* lazykakeiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA011282E8F3000342DCB /* lazykakeiboUITests.swift */; };
 		FCEAA014282E8F3000342DCB /* lazykakeiboUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA013282E8F3000342DCB /* lazykakeiboUITestsLaunchTests.swift */; };
+		FCEAA021282E8F7400342DCB /* Views in Resources */ = {isa = PBXBuildFile; fileRef = FCEAA020282E8F7400342DCB /* Views */; };
+		FCEAA023282E8F9C00342DCB /* lazykakeiboApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA022282E8F9C00342DCB /* lazykakeiboApp.swift */; };
+		FCEAA027282E907200342DCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA026282E907200342DCB /* ContentView.swift */; };
+		FCEAA029282E907C00342DCB /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA028282E907C00342DCB /* HistoryView.swift */; };
+		FCEAA02B282E907E00342DCB /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA02A282E907E00342DCB /* TodayView.swift */; };
+		FCEAA03528329AA800342DCB /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA03428329AA800342DCB /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC4BD42328366479008FE978 /* VariableBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableBillView.swift; sourceTree = "<group>"; };
+		FC8FB7B928367DDD0047130A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		FC8FB7BB28367ED00047130A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		FCEA9FF3282E8F2F00342DCB /* lazykakeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lazykakeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCEA9FF6282E8F2F00342DCB /* lazykakeiboApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lazykakeiboApp.swift; sourceTree = "<group>"; };
-		FCEA9FF8282E8F2F00342DCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FCEA9FFA282E8F3000342DCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCEA9FFD282E8F3000342DCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FCEAA003282E8F3000342DCB /* lazykakeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lazykakeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +52,12 @@
 		FCEAA00D282E8F3000342DCB /* lazykakeiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lazykakeiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEAA011282E8F3000342DCB /* lazykakeiboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lazykakeiboUITests.swift; sourceTree = "<group>"; };
 		FCEAA013282E8F3000342DCB /* lazykakeiboUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lazykakeiboUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FCEAA020282E8F7400342DCB /* Views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Views; sourceTree = "<group>"; };
+		FCEAA022282E8F9C00342DCB /* lazykakeiboApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lazykakeiboApp.swift; sourceTree = "<group>"; };
+		FCEAA026282E907200342DCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FCEAA028282E907C00342DCB /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		FCEAA02A282E907E00342DCB /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		FCEAA03428329AA800342DCB /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +108,17 @@
 		FCEA9FF5282E8F2F00342DCB /* lazykakeibo */ = {
 			isa = PBXGroup;
 			children = (
-				FCEA9FF6282E8F2F00342DCB /* lazykakeiboApp.swift */,
-				FCEA9FF8282E8F2F00342DCB /* ContentView.swift */,
+				FCEAA02A282E907E00342DCB /* TodayView.swift */,
+				FCEAA03428329AA800342DCB /* EditView.swift */,
+				FCEAA028282E907C00342DCB /* HistoryView.swift */,
+				FCEAA026282E907200342DCB /* ContentView.swift */,
+				FCEAA022282E8F9C00342DCB /* lazykakeiboApp.swift */,
+				FCEAA020282E8F7400342DCB /* Views */,
 				FCEA9FFA282E8F3000342DCB /* Assets.xcassets */,
 				FCEA9FFC282E8F3000342DCB /* Preview Content */,
+				FC4BD42328366479008FE978 /* VariableBillView.swift */,
+				FC8FB7B828367DDD0047130A /* Model.xcdatamodeld */,
+				FC8FB7BB28367ED00047130A /* Persistence.swift */,
 			);
 			path = lazykakeibo;
 			sourceTree = "<group>";
@@ -231,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCEAA021282E8F7400342DCB /* Views in Resources */,
 				FCEA9FFE282E8F3000342DCB /* Preview Assets.xcassets in Resources */,
 				FCEA9FFB282E8F3000342DCB /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +279,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCEA9FF9282E8F2F00342DCB /* ContentView.swift in Sources */,
-				FCEA9FF7282E8F2F00342DCB /* lazykakeiboApp.swift in Sources */,
+				FCEAA027282E907200342DCB /* ContentView.swift in Sources */,
+				FC8FB7BC28367ED00047130A /* Persistence.swift in Sources */,
+				FCEAA03528329AA800342DCB /* EditView.swift in Sources */,
+				FCEAA029282E907C00342DCB /* HistoryView.swift in Sources */,
+				FC8FB7BA28367DDD0047130A /* Model.xcdatamodeld in Sources */,
+				FC4BD42428366479008FE978 /* VariableBillView.swift in Sources */,
+				FCEAA02B282E907E00342DCB /* TodayView.swift in Sources */,
+				FCEAA023282E8F9C00342DCB /* lazykakeiboApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"lazykakeibo/Preview Content\"";
+				DEVELOPMENT_TEAM = V7A578M95D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"lazykakeibo/Preview Content\"";
+				DEVELOPMENT_TEAM = V7A578M95D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -577,6 +607,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC8FB7B828367DDD0047130A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC8FB7B928367DDD0047130A /* Model.xcdatamodel */,
+			);
+			currentVersion = FC8FB7B928367DDD0047130A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FCEA9FEB282E8F2F00342DCB /* Project object */;
 }

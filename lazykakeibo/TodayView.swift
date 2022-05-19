@@ -11,78 +11,137 @@ import Foundation
 import SwiftUI
 import CoreData
 //contas variaveis
-struct VariableBills {
-    var Name: String
-    var Bill: Double
+struct VariableBills:Identifiable {
+    let id = UUID()
+    var name: String
+    var bill: Int
 }
 //contas fixas
-struct MonthBills {
-    var Name: String
-    var Bill: Double
+struct MonthBills:Identifiable {
+    let id = UUID()
+    var name: String
+    var bill: Int
 }
 //struct que mostra esse mES
-struct ThisMonth {
-    var Month: String
+struct ThisMonth:Identifiable {
+    let id = UUID()
+    var month: String
     var variableBills:[VariableBills]
     var monthBills:[MonthBills]
-    var StaticIncome: String
-    var VariableIncome: String
+    var staticIncome: [StaticIncome]
+    var variableIncome: [VariableIncome]
 }
 
-//CRIACAO DE structs testes
-var test = VariableBills(Name: "Test", Bill: 10.0)
+struct StaticIncome:Identifiable{
+    let id = UUID()
+    var name:String
+    var value: Int
+    
+}
+
+struct VariableIncome:Identifiable{
+    let id = UUID()
+    var name:String
+    var value: Int
+    
+}
+
+
 
 struct TodayView: View {
+    @Environment(\.managedObjectContext) private var viewContext
     //variaveis locais
-    var contador = 2
+    
+    @State private var showAddView = false
+    //variaveis state
+    @State private var showEditView = false
+    
+    @State private var PreenchimentoVariavel = [
+        VariableBills(name: "Academia", bill: 10),
+        VariableBills(name: "Jogo", bill: 150)
+    ]
+    @State private var PreenchimentoContas = [
+        MonthBills(name: "Transporte", bill: 150),
+        MonthBills(name: "Comida", bill: 240)
+    ]
+    @State private var PreenchimentoRenda = [
+        VariableIncome(name: "Salário", value: 10000)
+    ]
+    @State private var PreenchimentoRendaVariavel = [
+        StaticIncome(name: "B3", value: 230)
+    ]
+    
+    
+    
     
     var body: some View {
         NavigationView{
             VStack{
-                Text("Verba R$1200")
-                    .foregroundColor(Color.green)
-                Form{
-                    Section(header: Text("Renda")){
-                        HStack{
-                            Text("Fixa")
-                            Text("a").foregroundColor(.green)
-                        }
-                        HStack{
-                            Text("Variável")
-                            Text("a").foregroundColor(.green)
+                List{
+                    Section(header: Text("Gastos Variaveis")){
+                        ForEach(PreenchimentoVariavel){ (PV) in
+                            HStack{
+                                Text(PV.name)
+                                Spacer()
+                                Text("\(PV.bill)").foregroundColor(.green)
+                            }
                         }
                         
                     }
-                    Section{
+                    Section(header: Text("Gastos Essenciais") ){
+                        ForEach(PreenchimentoContas){ (PC) in
                             HStack{
-                                Text("\(test.Name)")
-                                Text("\(test.Bill)").foregroundColor(.green)
+                                Text(PC.name)
+                                Spacer()
+                                Text("\(PC.bill)").foregroundColor(.green)
+                            }
                         }
-                    }
-                    Section{
-                        HStack{
-                            Text("Variável")
-                            Text("a").foregroundColor(.green)
+                                            }
+                    Section(header: Text("Renda Fixa")){
+                        ForEach(PreenchimentoRenda){ (PR) in
+                            HStack{
+                                Text(PR.name)
+                                Spacer()
+                                Text("\(PR.value)").foregroundColor(.green)
+                            }
                         }
+                        
                     }
+                    Section(header: Text("Renda Variável")){
+                        ForEach(PreenchimentoRendaVariavel){ (PRV) in
+                            HStack{
+                                Text(PRV.name)
+                                Spacer()
+                                Text("\(PRV.value)").foregroundColor(.green)
+                            }
+                        }
+                        
+
+                    }
+
                 }
                 //titulo do pagina com botao de edicao
             }.navigationTitle("Mês").toolbar{
-                ToolbarItem(){
-                    Button{
-                        
-                    }label: {
-                        Image(systemName: "square.and.pencil").foregroundColor(Color.black)
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Button("Editar"){
+                        self.showEditView.toggle()
+                    }.sheet(isPresented: $showEditView){
+                        EditView(showEditView: self.$showEditView)
                     }
-                }
+
+                    
+                            }
+                
+                
             }
         }
         
     }
 }
 
-struct AddTodoView:View{
-    var body: some View{
-        Text("a")
-    }
-}
+
+
+
+
+
+

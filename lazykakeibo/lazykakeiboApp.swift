@@ -10,8 +10,9 @@ import SwiftUI
 @main
 struct lazykakeiboApp: App {
     var body: some Scene {
+        let persistentContainer = PersistentController.shared
         WindowGroup {
-            ContentView()
+            ContentView().environment(\.managedObjectContext, persistentContainer.container.viewContext)
         }
     }
 }
