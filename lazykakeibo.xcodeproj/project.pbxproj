@@ -10,6 +10,17 @@
 		FC4BD42428366479008FE978 /* VariableBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BD42328366479008FE978 /* VariableBillView.swift */; };
 		FC8FB7BA28367DDD0047130A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC8FB7B828367DDD0047130A /* Model.xcdatamodeld */; };
 		FC8FB7BC28367ED00047130A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8FB7BB28367ED00047130A /* Persistence.swift */; };
+		FC8FB7BE28369C260047130A /* MonthBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8FB7BD28369C260047130A /* MonthBillView.swift */; };
+		FC8FB7C028369EA80047130A /* StaticIncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8FB7BF28369EA80047130A /* StaticIncomeView.swift */; };
+		FC8FB7C22836A03D0047130A /* VariableIncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8FB7C12836A03D0047130A /* VariableIncomeView.swift */; };
+		FC8FB7CB2836A70A0047130A /* MonthBill+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8FB7C32836A70A0047130A /* MonthBill+CoreDataClass.swift */; };
+		FC8FB7CC2836A70A0047130A /* MonthBill+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8FB7C42836A70A0047130A /* MonthBill+CoreDataProperties.swift */; };
+		FC8FB7CD2836A70A0047130A /* StaticIncome+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8FB7C52836A70A0047130A /* StaticIncome+CoreDataClass.swift */; };
+		FC8FB7CE2836A70A0047130A /* StaticIncome+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8FB7C62836A70A0047130A /* StaticIncome+CoreDataProperties.swift */; };
+		FC8FB7CF2836A70A0047130A /* VariableBill+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8FB7C72836A70A0047130A /* VariableBill+CoreDataClass.swift */; };
+		FC8FB7D02836A70A0047130A /* VariableBill+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8FB7C82836A70A0047130A /* VariableBill+CoreDataProperties.swift */; };
+		FC8FB7D12836A70A0047130A /* VariableIncome+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8FB7C92836A70A0047130A /* VariableIncome+CoreDataClass.swift */; };
+		FC8FB7D22836A70A0047130A /* VariableIncome+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8FB7CA2836A70A0047130A /* VariableIncome+CoreDataProperties.swift */; };
 		FCEA9FFB282E8F3000342DCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCEA9FFA282E8F3000342DCB /* Assets.xcassets */; };
 		FCEA9FFE282E8F3000342DCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCEA9FFD282E8F3000342DCB /* Preview Assets.xcassets */; };
 		FCEAA008282E8F3000342DCB /* lazykakeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEAA007282E8F3000342DCB /* lazykakeiboTests.swift */; };
@@ -44,6 +55,17 @@
 		FC4BD42328366479008FE978 /* VariableBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableBillView.swift; sourceTree = "<group>"; };
 		FC8FB7B928367DDD0047130A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		FC8FB7BB28367ED00047130A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		FC8FB7BD28369C260047130A /* MonthBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthBillView.swift; sourceTree = "<group>"; };
+		FC8FB7BF28369EA80047130A /* StaticIncomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticIncomeView.swift; sourceTree = "<group>"; };
+		FC8FB7C12836A03D0047130A /* VariableIncomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableIncomeView.swift; sourceTree = "<group>"; };
+		FC8FB7C32836A70A0047130A /* MonthBill+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MonthBill+CoreDataClass.swift"; path = "lazykakeibo/MonthBill+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FC8FB7C42836A70A0047130A /* MonthBill+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MonthBill+CoreDataProperties.swift"; path = "lazykakeibo/MonthBill+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FC8FB7C52836A70A0047130A /* StaticIncome+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StaticIncome+CoreDataClass.swift"; path = "lazykakeibo/StaticIncome+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FC8FB7C62836A70A0047130A /* StaticIncome+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StaticIncome+CoreDataProperties.swift"; path = "lazykakeibo/StaticIncome+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FC8FB7C72836A70A0047130A /* VariableBill+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "VariableBill+CoreDataClass.swift"; path = "lazykakeibo/VariableBill+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FC8FB7C82836A70A0047130A /* VariableBill+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "VariableBill+CoreDataProperties.swift"; path = "lazykakeibo/VariableBill+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FC8FB7C92836A70A0047130A /* VariableIncome+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "VariableIncome+CoreDataClass.swift"; path = "lazykakeibo/VariableIncome+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FC8FB7CA2836A70A0047130A /* VariableIncome+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "VariableIncome+CoreDataProperties.swift"; path = "lazykakeibo/VariableIncome+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FCEA9FF3282E8F2F00342DCB /* lazykakeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lazykakeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEA9FFA282E8F3000342DCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCEA9FFD282E8F3000342DCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -88,6 +110,14 @@
 		FCEA9FEA282E8F2F00342DCB = {
 			isa = PBXGroup;
 			children = (
+				FC8FB7C32836A70A0047130A /* MonthBill+CoreDataClass.swift */,
+				FC8FB7C42836A70A0047130A /* MonthBill+CoreDataProperties.swift */,
+				FC8FB7C52836A70A0047130A /* StaticIncome+CoreDataClass.swift */,
+				FC8FB7C62836A70A0047130A /* StaticIncome+CoreDataProperties.swift */,
+				FC8FB7C72836A70A0047130A /* VariableBill+CoreDataClass.swift */,
+				FC8FB7C82836A70A0047130A /* VariableBill+CoreDataProperties.swift */,
+				FC8FB7C92836A70A0047130A /* VariableIncome+CoreDataClass.swift */,
+				FC8FB7CA2836A70A0047130A /* VariableIncome+CoreDataProperties.swift */,
 				FCEA9FF5282E8F2F00342DCB /* lazykakeibo */,
 				FCEAA006282E8F3000342DCB /* lazykakeiboTests */,
 				FCEAA010282E8F3000342DCB /* lazykakeiboUITests */,
@@ -112,13 +142,16 @@
 				FCEAA03428329AA800342DCB /* EditView.swift */,
 				FCEAA028282E907C00342DCB /* HistoryView.swift */,
 				FCEAA026282E907200342DCB /* ContentView.swift */,
+				FC4BD42328366479008FE978 /* VariableBillView.swift */,
 				FCEAA022282E8F9C00342DCB /* lazykakeiboApp.swift */,
+				FC8FB7BF28369EA80047130A /* StaticIncomeView.swift */,
+				FC8FB7BD28369C260047130A /* MonthBillView.swift */,
 				FCEAA020282E8F7400342DCB /* Views */,
 				FCEA9FFA282E8F3000342DCB /* Assets.xcassets */,
 				FCEA9FFC282E8F3000342DCB /* Preview Content */,
-				FC4BD42328366479008FE978 /* VariableBillView.swift */,
 				FC8FB7B828367DDD0047130A /* Model.xcdatamodeld */,
 				FC8FB7BB28367ED00047130A /* Persistence.swift */,
+				FC8FB7C12836A03D0047130A /* VariableIncomeView.swift */,
 			);
 			path = lazykakeibo;
 			sourceTree = "<group>";
@@ -279,14 +312,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC8FB7CF2836A70A0047130A /* VariableBill+CoreDataClass.swift in Sources */,
 				FCEAA027282E907200342DCB /* ContentView.swift in Sources */,
+				FC8FB7CC2836A70A0047130A /* MonthBill+CoreDataProperties.swift in Sources */,
+				FC8FB7CD2836A70A0047130A /* StaticIncome+CoreDataClass.swift in Sources */,
 				FC8FB7BC28367ED00047130A /* Persistence.swift in Sources */,
 				FCEAA03528329AA800342DCB /* EditView.swift in Sources */,
 				FCEAA029282E907C00342DCB /* HistoryView.swift in Sources */,
+				FC8FB7D22836A70A0047130A /* VariableIncome+CoreDataProperties.swift in Sources */,
+				FC8FB7C22836A03D0047130A /* VariableIncomeView.swift in Sources */,
+				FC8FB7CB2836A70A0047130A /* MonthBill+CoreDataClass.swift in Sources */,
+				FC8FB7BE28369C260047130A /* MonthBillView.swift in Sources */,
 				FC8FB7BA28367DDD0047130A /* Model.xcdatamodeld in Sources */,
+				FC8FB7CE2836A70A0047130A /* StaticIncome+CoreDataProperties.swift in Sources */,
+				FC8FB7D12836A70A0047130A /* VariableIncome+CoreDataClass.swift in Sources */,
 				FC4BD42428366479008FE978 /* VariableBillView.swift in Sources */,
 				FCEAA02B282E907E00342DCB /* TodayView.swift in Sources */,
 				FCEAA023282E8F9C00342DCB /* lazykakeiboApp.swift in Sources */,
+				FC8FB7C028369EA80047130A /* StaticIncomeView.swift in Sources */,
+				FC8FB7D02836A70A0047130A /* VariableBill+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

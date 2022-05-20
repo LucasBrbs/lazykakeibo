@@ -13,6 +13,9 @@ struct EditView: View {
     @Binding var showEditView: Bool
     
     @State private var showVariableBillView = false
+    @State private var showMonthBillView = false
+    @State private var showStaticIncomeView = false
+    @State private var showVariableIncomeView = false
     
     @State private var fixedIncome:String = ""
     @State private var variableIncomeName:String = ""
@@ -34,16 +37,25 @@ struct EditView: View {
                     Section{
                         Button("Gastos Essencias/Fixos"){
                             
+                            self.showMonthBillView.toggle()
+                        }.sheet(isPresented: $showMonthBillView){
+                            MonthBillView(showMonthBillView: self.$showMonthBillView)
                         }
                     }
                     Section{
                         Button("Renda fixa"){
                             
+                            self.showStaticIncomeView.toggle()
+                        }.sheet(isPresented: $showStaticIncomeView){
+                            StaticIncomeView(showStaticIncomeView: self.$showStaticIncomeView)
                         }
                     }
                     Section{
                         Button("Renda Variada"){
                             
+                            self.showVariableIncomeView.toggle()
+                        }.sheet(isPresented: $showVariableIncomeView){
+                            VariableIncomeView(showVariableIncomeView: self.$showVariableIncomeView)
                         }
                     }
                     

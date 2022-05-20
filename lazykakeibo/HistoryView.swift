@@ -13,7 +13,7 @@ struct HistoryView: View {
     var body: some View {
         NavigationView{
             VStack{
-                Text("a")
+                Text("Em produção")
             }.navigationTitle("Histórico")
         }
         

@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="VariableBill" representedClassName="VariableBill" syncable="YES" codeGenerationType="class">
-        <attribute name="bill" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    <entity name="MonthBill" representedClassName="MonthBill" syncable="YES">
+        <attribute name="bill" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="StaticIncome" representedClassName="StaticIncome" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="value" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="VariableBill" representedClassName="VariableBill" syncable="YES">
+        <attribute name="bill" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="VariableIncome" representedClassName="VariableIncome" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="value" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
     </entity>
     <elements>
         <element name="VariableBill" positionX="-63" positionY="-18" width="128" height="59"/>
+        <element name="MonthBill" positionX="-54" positionY="9" width="128" height="59"/>
+        <element name="StaticIncome" positionX="-36" positionY="27" width="128" height="59"/>
+        <element name="VariableIncome" positionX="-18" positionY="45" width="128" height="59"/>
     </elements>
 </model>

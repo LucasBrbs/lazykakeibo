@@ -1,26 +1,21 @@
-//
-//  VariableBillView.swift
-//  lazykakeibo
-//
-//  Created by Lucas Barbosa de Oliveira on 19/05/22.
-//
+
 
 import Foundation
 import SwiftUI
 import CoreData
 
-struct VariableBillView: View {
+struct StaticIncomeView: View {
     @Environment(\.managedObjectContext) private var viewContext
-    @FetchRequest(sortDescriptors: []) private var variableBill: FetchedResults<VariableBill>
+    @FetchRequest(sortDescriptors: []) private var staticIncome: FetchedResults<StaticIncome>
     
-    @Binding var showVariableBillView: Bool
+    @Binding var showStaticIncomeView: Bool
     
-    @State private var showAddVariableBillView = false
+    @State private var showAddStaticIncomeView = false
     
-    private func deleteVariableBill(offsets: IndexSet){
+    private func deleteStaticIncome(offsets: IndexSet){
         for index in offsets{
-            let variableBills = variableBill[index]
-            viewContext.delete(variableBills)
+            let staticIncomes = staticIncome[index]
+            viewContext.delete(staticIncomes)
         }
         do{
             try viewContext.save()
@@ -30,36 +25,38 @@ struct VariableBillView: View {
         }
     }
     
+    
+    
     var body: some View {
         NavigationView{
             VStack{
                 List{
-                    ForEach(variableBill, id:\.self){ (PV2) in
+                    ForEach(staticIncome, id:\.self){ (PV2) in
                         HStack{
                             Text(PV2.name ?? "untitled")
                             Spacer()
-                            Text("\(PV2.bill, specifier: "%.2f")").foregroundColor(.green)
+                            Text("\(PV2.value, specifier: "%.2f")").foregroundColor(.green)
                         }
                     }.onDelete(perform: { indexSet in
                         //teste.remove(atOffsets: indexSet)
-                        deleteVariableBill(offsets:indexSet)
+                        deleteStaticIncome(offsets:indexSet)
                     })
                 }
                 
                 
-            }.navigationTitle("Gastos Variaveis").toolbar(){
+            }.navigationTitle("Renda Fixa").toolbar(){
                 ToolbarItem(placement: .navigationBarLeading){
                     Button("<Voltar"){
-                        self.showVariableBillView = false
+                        self.showStaticIncomeView = false
                         
                     }
                     
                 }
                 ToolbarItem(placement: .navigationBarTrailing){
                     Button("Adicionar"){
-                        self.showAddVariableBillView.toggle()
-                    }.sheet(isPresented: $showAddVariableBillView){
-                        AddVariableBillView(showAddVariableBillView: self.$showAddVariableBillView)
+                        self.showAddStaticIncomeView.toggle()
+                    }.sheet(isPresented: $showAddStaticIncomeView){
+                        AddStaticIncomeView(showAddStaticIncomeView: self.$showAddStaticIncomeView)
                     }
                 }
 
@@ -68,27 +65,27 @@ struct VariableBillView: View {
         
     }
 
-struct AddVariableBillView: View{
+struct AddStaticIncomeView: View{
     @Environment(\.managedObjectContext) private var viewContext
     
-    @Binding var showAddVariableBillView:Bool
+    @Binding var showAddStaticIncomeView:Bool
     @State private var name:String = ""
     @State private var value:Float = 0
     
     var body: some View {
         VStack{
             Text("Adicionar nome").font(.body)
-            TextField("Nome da conta/fatura", text: $name).textFieldStyle(RoundedBorderTextFieldStyle()).padding()
+            TextField("Nome do ganho", text: $name).textFieldStyle(RoundedBorderTextFieldStyle()).padding()
             
             Text("Adicionar Valor").font(.body)
-            TextField("valor da conta/fatura", value: $value,format: .number).textFieldStyle(RoundedBorderTextFieldStyle()).padding()
+            TextField("valor do ganho", value: $value,format: .number).textFieldStyle(RoundedBorderTextFieldStyle()).padding()
         }
         Button("Adicionar"){
-            self.showAddVariableBillView = false
-            let newVariableBill = VariableBill(context: viewContext)
+            self.showAddStaticIncomeView = false
+            let newStaticIncome = StaticIncome(context: viewContext)
             
-            newVariableBill.name = name
-            newVariableBill.bill = value
+            newStaticIncome.name = name
+            newStaticIncome.value = value
             
             do{
                 try viewContext.save()

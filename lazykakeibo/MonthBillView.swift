@@ -9,18 +9,18 @@ import Foundation
 import SwiftUI
 import CoreData
 
-struct VariableBillView: View {
+struct MonthBillView: View {
     @Environment(\.managedObjectContext) private var viewContext
-    @FetchRequest(sortDescriptors: []) private var variableBill: FetchedResults<VariableBill>
+    @FetchRequest(sortDescriptors: []) private var monthBill: FetchedResults<MonthBill>
     
-    @Binding var showVariableBillView: Bool
+    @Binding var showMonthBillView: Bool
     
-    @State private var showAddVariableBillView = false
+    @State private var showAddMonthBillView = false
     
-    private func deleteVariableBill(offsets: IndexSet){
+    private func deleteMonthBill(offsets: IndexSet){
         for index in offsets{
-            let variableBills = variableBill[index]
-            viewContext.delete(variableBills)
+            let monthBills = monthBill[index]
+            viewContext.delete(monthBills)
         }
         do{
             try viewContext.save()
@@ -34,7 +34,7 @@ struct VariableBillView: View {
         NavigationView{
             VStack{
                 List{
-                    ForEach(variableBill, id:\.self){ (PV2) in
+                    ForEach(monthBill, id:\.self){ (PV2) in
                         HStack{
                             Text(PV2.name ?? "untitled")
                             Spacer()
@@ -42,24 +42,24 @@ struct VariableBillView: View {
                         }
                     }.onDelete(perform: { indexSet in
                         //teste.remove(atOffsets: indexSet)
-                        deleteVariableBill(offsets:indexSet)
+                        deleteMonthBill(offsets:indexSet)
                     })
                 }
                 
                 
-            }.navigationTitle("Gastos Variaveis").toolbar(){
+            }.navigationTitle("Gastos Essenciais").toolbar(){
                 ToolbarItem(placement: .navigationBarLeading){
                     Button("<Voltar"){
-                        self.showVariableBillView = false
+                        self.showMonthBillView = false
                         
                     }
                     
                 }
                 ToolbarItem(placement: .navigationBarTrailing){
                     Button("Adicionar"){
-                        self.showAddVariableBillView.toggle()
-                    }.sheet(isPresented: $showAddVariableBillView){
-                        AddVariableBillView(showAddVariableBillView: self.$showAddVariableBillView)
+                        self.showAddMonthBillView.toggle()
+                    }.sheet(isPresented: $showAddMonthBillView){
+                        AddMonthBillView(showAddMonthBillView: self.$showAddMonthBillView)
                     }
                 }
 
@@ -68,10 +68,10 @@ struct VariableBillView: View {
         
     }
 
-struct AddVariableBillView: View{
+struct AddMonthBillView: View{
     @Environment(\.managedObjectContext) private var viewContext
     
-    @Binding var showAddVariableBillView:Bool
+    @Binding var showAddMonthBillView:Bool
     @State private var name:String = ""
     @State private var value:Float = 0
     
@@ -84,11 +84,11 @@ struct AddVariableBillView: View{
             TextField("valor da conta/fatura", value: $value,format: .number).textFieldStyle(RoundedBorderTextFieldStyle()).padding()
         }
         Button("Adicionar"){
-            self.showAddVariableBillView = false
-            let newVariableBill = VariableBill(context: viewContext)
+            self.showAddMonthBillView = false
+            let newMonthBill = MonthBill(context: viewContext)
             
-            newVariableBill.name = name
-            newVariableBill.bill = value
+            newMonthBill.name = name
+            newMonthBill.bill = value
             
             do{
                 try viewContext.save()
